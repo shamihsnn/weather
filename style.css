@@ -1,0 +1,113 @@
+/* Add your global styles here */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(45deg, #061de3, #e306ca);
+  font-family: Helvetica, sans-serif;
+  color: wheat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-container {
+  perspective: 1000px;
+}
+
+.card {
+  width: 300px;
+  height: 400px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.front,
+.back {
+  width: 100%;
+  height: 100%;
+  border-radius: 2rem;
+  box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+  position: absolute;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.front {
+  background-image: url(https://source.unsplash.com/random/350x500);
+  transform: rotateY(0deg);
+}
+
+input[type="text"] {
+  width: 80%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.back {
+  background-image: url(forecast.jpg);
+  background-size: cover;
+  transform: rotateY(180deg);
+}
+
+.overlay {
+  opacity: 0;
+  transition: opacity 1s;
+  pointer-events: none;
+}
+
+.card:hover {
+  transform: rotateY(180deg);
+}
+
+#cityInput:valid + label + .overlay + .front {
+  transform: rotateY(0deg);
+}
+
+#searchButton {
+  background-color: #008CBA;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#searchButton:hover {
+  background-color: #005f7e;
+}
+.city{
+  display:flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.search-city{
+ position:relative;
+ top:-15px;
+ left:-80px;
+text-decoration: underline ;
+ color:wheat;
+ 
+  
+}
+.icon{
+  position:relative;
+  bottom:-30px;
+  color:skyblue;
+  font-size: 25px;
+}
+.para{
+text-align: center;
+color:black;
+}

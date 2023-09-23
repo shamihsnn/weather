@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card-container">
+        <div class="card">
+            <div class="front">
+                <h1>Weather Report</h1> <br>
+                <div class="para">
+                <p> <strong> City: </strong > wah cantt</p> <br>
+                <p> <strong>Temperature:</strong> 32°/ 20° , RealFeel 34°</p>
+                <p> <strong>Some clouds </strong> </p>
+                <p> <strong> Wind Gusts : </strong> 13 km/h </p>
+                <p>  <strong>Humidity:</strong>  77% </p>
+
+                 <p> <strong>Indoor Humidity:</strong> 77% (Very Humid) </p>
+                  
+                 <p> <strong> Dew Point : </strong> 21° C </p>
+                
+                 <p> <strong>  Pressure: </strong> ↓ 1005 mb </p> 
+                  
+                <p> <strong> Cloud Cover: </strong>51% </p>
+                  
+                <p>   <strong>Visibility: </strong> 5 km </p>  </div>
+                 
+                <div class="icon">
+                  <i class="fa-solid fa-cloud fa-beat"></i>
+                <i class="fa-solid fa-bolt fa-bounce"></i>
+                <i class="fa-solid fa-temperature-half fa-shake"></i>
+                <i class="fa-solid fa-snowflake fa-spin"></i>
+                <i class="fa-regular fa-moon fa-fade"></i>
+                <i class="fa-solid fa-umbrella fa-beat"></i>
+                <i class="fa-solid fa-smog"></i>
+                <i class="fa-solid fa-cloud-moon-rain fa-shake"></i>
+              </div>
+                <!-- Ad  iokn ]kknmlmnd more weather information here -->
+            </div>
+            <div class="back">
+              <label for="cityInput" class="search-city">  Search cities </label> 
+               <div class="city">
+                <input type="text" id="cityinput" placeholder="Enter a city">
+                <button id="searchButton">Search</button>
+                <div class="overlay"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
